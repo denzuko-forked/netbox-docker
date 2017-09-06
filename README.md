@@ -7,7 +7,7 @@ This repository houses the components needed to build NetBox as a Docker contain
 To get NetBox up and running:
 
 ```
-# git clone -b master https://github.com/digitalocean/netbox-docker.git
+# git clone -b master https://github.com/denzuko-forked/netbox-docker.git
 # cd netbox
 # docker-compose up -d
 ```
