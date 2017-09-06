@@ -7,9 +7,12 @@ This repository houses the components needed to build NetBox as a Docker contain
 To get NetBox up and running:
 
 ```
-# git clone -b master https://github.com/denzuko-forked/netbox-docker.git
+# git clone -b master https://github.com/denzuko-forked/netbox-docker.git netbox
 # cd netbox
-# docker-compose up -d
+# docker-machine create -d vagrant netbox
+# eval `docker-machine env netbox`
+# docker swarm init
+# docker stack deploy -c docker-compose.yml 
 ```
 
 The application will be available on http://localhost/ after a few minutes.
